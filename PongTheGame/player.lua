@@ -26,8 +26,8 @@ function Player:checkBoundries()
 end
 
 function Player:update(dt)
-  Player:move(dt);
-  Player:checkBoundries();
+  self:move(dt);
+  self:checkBoundries();
 end
 
 function Player:draw()
