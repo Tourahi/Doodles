@@ -22,6 +22,11 @@ function player:update(dt)
   end
 end
 
+function player:move(x , y)
+  self.x = self.x + x;
+  self.y = self.y + y;
+end
+
 function player:draw()
   love.graphics.rectangle(self.mode, self.x, self.y,
                           self.width, self.height );
